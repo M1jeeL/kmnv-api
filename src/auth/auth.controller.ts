@@ -38,7 +38,6 @@ export class AuthController {
   @Post('restoreSession')
   @HttpCode(HttpStatus.OK)
   restoreSession(@GetCurrentUserId() userId: string) {
-    console.log('pasoo');
     return this.authService.restoreSession(userId);
   }
 
