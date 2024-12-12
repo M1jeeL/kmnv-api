@@ -14,7 +14,6 @@ import { RolesGuard } from 'src/common/guards/roles.guard';
 import { Roles } from 'src/common/decorators/roles.decorator';
 import { UserRole } from '@prisma/client';
 import { UpdateUserDto } from './dto';
-console.log(UserRole);
 
 @UseGuards(RolesGuard)
 @Controller('users')
